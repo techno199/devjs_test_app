@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/logo.svg';
+import { DatePicker } from 'antd';
 
 export class App extends React.Component {
     render() {
@@ -12,6 +13,7 @@ export class App extends React.Component {
                 <p className='App-intro'>
                     Hi there!
                 </p>
+                <DatePicker />
             </div>
         )
     }
