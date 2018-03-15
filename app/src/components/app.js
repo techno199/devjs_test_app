@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from '../../assets/logo.svg';
+import logo from '../assets/logo.svg';
 import { DatePicker } from 'antd';
+import { Studios } from '../containers/studios';
 
 export class App extends React.Component {
     render() {
@@ -8,12 +9,9 @@ export class App extends React.Component {
             <div className='App'>
                 <header className='App-header'>
                     <img src={logo} className='App-logo' />
-                    <h1 className='App-title'>Welcome to React!</h1>
+                    <h1 className='App-title'>TAKELOOK</h1>
                 </header>
-                <p className='App-intro'>
-                    Hi there!
-                </p>
-                <DatePicker />
+                <Studios />
             </div>
         )
     }

@@ -1,0 +1,46 @@
+.studios_container {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+}
+
+.studio_container {
+    width: 350px;
+    display: flex;
+    flex-flow: column;
+    margin: 10px 10px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    position: relative;
+}
+
+.studio_view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex: 1 1 auto; 
+    background-color: #FAFAFA;
+    border-bottom: 1px solid rgba(0,0,0, .1);
+}
+
+.studio_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.studio_view img {
+    max-width: 100%;
+}
+
+.studio_price {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    padding: 4px 8px;
+    background-color: #3B5FD7;
+    color: white;
+}
