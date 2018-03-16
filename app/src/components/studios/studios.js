@@ -12,7 +12,7 @@ export class StudiosComponent extends React.Component {
             <div className='studios_container'>
                 {
                     this.props.studios.map((studio) => (
-                        <div className='studio_container'>
+                        <div key={studio.id} className='studio_container'>
                             <div className='studio_view'>
                                 <img src={studio.view} />
                             </div>

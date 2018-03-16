@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.App {
+    text-align: center;
+    position: relative;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    display: flex;
+    padding: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.App-title {
+    margin: 0;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+content {
+    display: flex;
+    padding: 12px;
+}
+
+.main-content_search-bar_wrapper {
+    width: 300px;
+    flex: 1 0 auto;
+    order: 2;
+}
+  
+  

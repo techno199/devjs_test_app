@@ -21,6 +21,9 @@ export function studiosReducer(
                 isFetching: false
             }
         }
+        default: {
+            return state;
+        }
     }
-    return state;
+    
 }
