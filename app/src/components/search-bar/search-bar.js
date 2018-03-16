@@ -4,8 +4,18 @@ import Button, { Input, Card, Slider } from 'antd'
 import './search-bar.css';
 
 export class SearchBarComponent extends React.Component {
-    bigPrice = 100000000000;
-    smallPrice = -1;
+    constructor(props) {
+        super(props);
+
+        this.state = {sliderValue: [0,0]}
+        this.handleSliderChange = this.handleSliderChange.bind(this);
+    }
+
+    handleSliderChange(value) {
+        this.setState({
+            sliderValue: value
+        });
+    }
 
     render() {
         let minPriceStudio = {price: 0};
@@ -43,7 +53,9 @@ export class SearchBarComponent extends React.Component {
                             {minPriceStudio.price} - {maxPriceStudio.price}
                         </div>
                     </div>
-                    <Slider range min={minPriceStudio.price} max={maxPriceStudio.price} value={[minPriceStudio.price, maxPriceStudio.price]}/>
+                    <Slider range min={minPriceStudio.price} 
+                        max={maxPriceStudio.price} value={this.state.sliderValue}
+                        onChange={this.handleSliderChange}/>
                 </Card>
             </div>
         )
