@@ -33,12 +33,17 @@ body {
 content {
     display: flex;
     padding: 12px;
+    justify-content: center;
 }
 
 .main-content_search-bar_wrapper {
     width: 300px;
-    flex: 1 0 auto;
+    flex: 0 0 auto;
     order: 2;
+}
+
+.main-content_studios_wrapper {
+    max-width: 1200px;
 }
   
   
